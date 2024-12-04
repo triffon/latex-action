@@ -49,7 +49,7 @@ if [[ -z "$INPUT_DOCKER_IMAGE" ]]; then
     error "TeX Live version $INPUT_TEXLIVE_VERSION is not supported. The currently supported versions are 2020-2024 or latest."
     ;;
   esac
-  INPUT_DOCKER_IMAGE="ghcr.io/xu-cheng/texlive-full:$image_version"
+  INPUT_DOCKER_IMAGE="ghcr.io/triffon/texlive-full:$image_version"
 fi
 
 # ref: https://docs.miktex.org/manual/envvars.html
